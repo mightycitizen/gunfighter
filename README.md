@@ -12,9 +12,11 @@
 1.  **Setup**
 
     Git clone this repo
+
     Run `npm install` in project root
 
     If you don't have Gatsby CLI installed, run
+
     `npm install -g gatsby-cli`
 
 2.  **Start developing.**
