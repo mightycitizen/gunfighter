@@ -10,6 +10,7 @@
 ## 🚀 Quick start
 
 1.  **Setup**
+
     Git clone this repo
     Run `npm install` in project root
 
