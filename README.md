@@ -9,14 +9,12 @@
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Setup**
+    Git clone this repo
+    Run `npm install` in project root
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
-
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+    If you don't have Gatsby CLI installed, run
+    `npm install -g gatsby-cli`
 
 2.  **Start developing.**
 
