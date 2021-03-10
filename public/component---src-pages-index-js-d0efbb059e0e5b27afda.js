@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{RXBc:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),r=t("Wbzz");n.default=function(){var e=Object(r.c)("3052772894").allGunfightersJson.edges;return a.createElement("main",null,a.createElement("ul",null,e.map((function(e,n){var t=e.node;return a.createElement("li",{key:n},t.firstname," ",t.lastname)}))))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-d0efbb059e0e5b27afda.js.map
