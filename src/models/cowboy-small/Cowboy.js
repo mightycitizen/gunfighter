@@ -31,8 +31,8 @@ export default function Model({ mouse, ...props}) {
   useFrame((state, delta) => {
     mixer.update(delta)
     // console.log(nodes);
-    //nodes.forearmL.rotation.z -= Math.sin( delta ) * 0.80;
-    //nodes.forearmR.rotation.z += Math.sin( delta ) * 0.80;
+    nodes.forearmL.rotation.z -= Math.sin( delta ) * 0.80;
+    nodes.forearmR.rotation.z += Math.sin( delta ) * 0.80;
     // console.log(nodes.Armature.rotation.z);
     moveJoint(mouse, nodes.neck)
     moveJoint(mouse, nodes.spine)

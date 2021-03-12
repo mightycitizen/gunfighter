@@ -75,7 +75,7 @@ const IndexPage = () => {
           />
 
           <Suspense fallback={<Html>loading..</Html>}>
-            <Model mouse={mouse} position={[0, -0.2, -6]} scale={[1,1,1]} rotation={[0, 0, 0]} />
+            <Model mouse={mouse} position={[-2, -0.2, -6]} scale={[1,1,1]} rotation={[0, Math.PI/8, 0]} />
           </Suspense>
           <Plane rotation={[-0.5 * Math.PI, 0, 0]} position={[0,0,0]} />
 
