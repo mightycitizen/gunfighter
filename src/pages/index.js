@@ -6,7 +6,7 @@ import { Html, PerspectiveCamera } from '@react-three/drei';
 
 
 
-import Model from '../models/cowboy/Scene.js';
+import Model from '../models/cowboy-small/Cowboy.js';
 // markup
 
 function Plane({ ...props }) {
@@ -74,7 +74,7 @@ const IndexPage = () => {
           />
 
           <Suspense fallback={<Html>loading..</Html>}>
-            <Model position={[-450, -200, -700]} scale={[1,1,1]} rotation={[0, Math.PI / 2, 0]} />
+            <Model position={[0, -0.2, -6]} scale={[1,1,1]} rotation={[0, 0, 0]} />
           </Suspense>
           <Plane rotation={[-0.5 * Math.PI, 0, 0]} position={[0,0,0]} />
 
