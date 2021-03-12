@@ -13,6 +13,9 @@
 
     Git clone this repo
 
+    Run `nvm install`
+    Run `nvm use`
+
     Run `npm install` in project root
 
     If you don't have Gatsby CLI installed, run
@@ -24,7 +27,7 @@
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-gatsby-site/
+    cd gunfighter/
     npm run develop
     ```
 
