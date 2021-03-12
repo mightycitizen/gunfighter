@@ -3,6 +3,7 @@ import { Canvas } from 'react-three-fiber';
 import { useStaticQuery, graphql } from "gatsby";
 import '../styles/app.css';
 import { Html, PerspectiveCamera } from '@react-three/drei';
+import { getMousePos } from "../utils";
 
 
 
@@ -54,11 +55,11 @@ const IndexPage = () => {
   const fighters = response.allGunfightersJson.edges;
   const d = 8.25
   //const [ref, api] = useBox(() => ({ mass: 1 }))
-
+  const mouse = useRef({ x: 0, y: 0 })
   return (
     <div>
       <h1>Gunfighter</h1>
-      <Canvas >
+      <Canvas onMouseMove={(e) => (mouse.current = getMousePos(e))} >
 
         <PerspectiveCamera makeDefault>
           <hemisphereLight skyColor={"black"} groundColor={0xffffff} intensity={0.5} position={[0, 50, 0]} />
@@ -74,7 +75,7 @@ const IndexPage = () => {
           />
 
           <Suspense fallback={<Html>loading..</Html>}>
-            <Model position={[0, -0.2, -6]} scale={[1,1,1]} rotation={[0, 0, 0]} />
+            <Model mouse={mouse} position={[0, -0.2, -6]} scale={[1,1,1]} rotation={[0, 0, 0]} />
           </Suspense>
           <Plane rotation={[-0.5 * Math.PI, 0, 0]} position={[0,0,0]} />
 
